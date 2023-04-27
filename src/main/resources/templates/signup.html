@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th=”https://www.thymeleaf.org” lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up for newsletter</title>
+</head>
+<body>
+<h1>Become subscriber and sing up for the newsletter</h1>
+    <div>
+        <form th:action="@{/signup}"  th:object="${subscriber}" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Write your name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Write your email">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
