@@ -1,7 +1,8 @@
-package service;
+package service.implementation;
 
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import service.EmailSenderService;
 
 
 public class EmailSenderServiceImp implements EmailSenderService {
