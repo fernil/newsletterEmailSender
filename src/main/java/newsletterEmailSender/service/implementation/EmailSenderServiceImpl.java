@@ -1,15 +1,15 @@
-package service.implementation;
+package newsletterEmailSender.service.implementation;
 
+import newsletterEmailSender.service.EmailSenderService;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import service.EmailSenderService;
 
 
-public class EmailSenderServiceImp implements EmailSenderService {
+public class EmailSenderServiceImpl implements EmailSenderService {
 
     private JavaMailSender mailSender;
 
-    public EmailSenderServiceImp(JavaMailSender mailSender) {
+    public EmailSenderServiceImpl(JavaMailSender mailSender) {
         this.mailSender = mailSender;
     }
 

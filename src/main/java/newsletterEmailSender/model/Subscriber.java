@@ -1,4 +1,4 @@
-package model;
+package newsletterEmailSender.model;
 
 import jakarta.persistence.*;
 

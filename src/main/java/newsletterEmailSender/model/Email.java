@@ -1,4 +1,4 @@
-package model;
+package newsletterEmailSender.model;
 
 public class Email {
     private String to;
