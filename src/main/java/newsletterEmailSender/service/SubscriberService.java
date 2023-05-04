@@ -5,5 +5,6 @@ import org.springframework.stereotype.Service;
 
 
 public interface SubscriberService {
-    Subscriber save(Subscriber subscriber);
+    Subscriber saveSubscriber(Subscriber subscriber);
+
 }

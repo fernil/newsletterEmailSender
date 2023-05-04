@@ -14,7 +14,7 @@ public class SubscriberServiceImpl implements SubscriberService {
     }
 
     @Override
-    public Subscriber save(Subscriber subscriber) {
+    public Subscriber saveSubscriber(Subscriber subscriber) {
         return subscriberRepository.save(subscriber);
     }
 }
