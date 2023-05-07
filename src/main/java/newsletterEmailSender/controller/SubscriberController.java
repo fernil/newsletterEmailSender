@@ -26,9 +26,8 @@ public class SubscriberController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<String> saveSubscriber(@ModelAttribute("subscriber") Model model, Subscriber subscriber) {
-        model.addAttribute("subscriber", subscriber);
+    public String saveSubscriber(@ModelAttribute("subscriber") Subscriber subscriber) {
         subscriberService.saveSubscriber(subscriber);
-        return ResponseEntity.ok("subscriber added");
+        return "signup";
     }
 }

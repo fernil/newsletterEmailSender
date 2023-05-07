@@ -6,18 +6,20 @@
 </head>
 <body>
 <h1>Become subscriber and sing up for the newsletter</h1>
-    <div>
-        <form th:action="@{/signup}"  th:object="${subscriber}" method="POST">
-            <div>
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Write your name">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Write your email">
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+<div>
+    <form th:action="@{/signup}" th:object="${subscriber}" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" th:field="*{name}"
+                placeholder="Write your name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" th:field="*{email}"
+                placeholder="Write your email" required/>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 </body>
 </html>
