@@ -1,7 +1,11 @@
 package newsletterEmailSender.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "subscribers")
 public class Subscriber {
@@ -10,38 +14,4 @@ public class Subscriber {
     private long id;
     private String name;
     private String email;
-
-    public Subscriber() {
-    }
-
-    public Subscriber(long id, String name, String email) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
 }
