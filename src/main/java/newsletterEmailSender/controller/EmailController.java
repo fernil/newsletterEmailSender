@@ -1,8 +1,9 @@
 package newsletterEmailSender.controller;
 
 import newsletterEmailSender.service.EmailSenderService;
+import org.springframework.stereotype.Controller;
 
-
+@Controller
 public class EmailController {
 
     private final EmailSenderService emailSenderService;

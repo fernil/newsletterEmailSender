@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign up for newsletter</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 <h1>Become subscriber and sing up for the newsletter</h1>
-<div>
+<div class="form">
     <form th:action="@{/signup}" th:object="${subscriber}" method="POST">
         <div>
             <label for="name">Name</label>
